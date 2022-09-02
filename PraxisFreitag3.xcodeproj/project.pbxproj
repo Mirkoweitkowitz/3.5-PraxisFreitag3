@@ -13,6 +13,8 @@
 		4066F06828C1E478008620C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4066F06628C1E478008620C4 /* Main.storyboard */; };
 		4066F06A28C1E47A008620C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4066F06928C1E47A008620C4 /* Assets.xcassets */; };
 		4066F06D28C1E47A008620C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4066F06B28C1E47A008620C4 /* LaunchScreen.storyboard */; };
+		4066F07528C1EDF2008620C4 /* Bucket-ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066F07428C1EDF2008620C4 /* Bucket-ListViewController.swift */; };
+		4066F07728C1EE12008620C4 /* FotoalbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066F07628C1EE12008620C4 /* FotoalbumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4066F06928C1E47A008620C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4066F06C28C1E47A008620C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4066F06E28C1E47A008620C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4066F07428C1EDF2008620C4 /* Bucket-ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bucket-ListViewController.swift"; sourceTree = "<group>"; };
+		4066F07628C1EE12008620C4 /* FotoalbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoalbumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				4066F06028C1E478008620C4 /* AppDelegate.swift */,
 				4066F06228C1E478008620C4 /* SceneDelegate.swift */,
 				4066F06428C1E478008620C4 /* ViewController.swift */,
+				4066F07628C1EE12008620C4 /* FotoalbumViewController.swift */,
+				4066F07428C1EDF2008620C4 /* Bucket-ListViewController.swift */,
 				4066F06628C1E478008620C4 /* Main.storyboard */,
 				4066F06928C1E47A008620C4 /* Assets.xcassets */,
 				4066F06B28C1E47A008620C4 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4066F07728C1EE12008620C4 /* FotoalbumViewController.swift in Sources */,
+				4066F07528C1EDF2008620C4 /* Bucket-ListViewController.swift in Sources */,
 				4066F06528C1E478008620C4 /* ViewController.swift in Sources */,
 				4066F06128C1E478008620C4 /* AppDelegate.swift in Sources */,
 				4066F06328C1E478008620C4 /* SceneDelegate.swift in Sources */,
