@@ -9,21 +9,45 @@ import UIKit
 
 class FotoalbumViewController: UIViewController {
 
+    @IBOutlet weak var picViewTV: UICollectionView!
+    
+    private let reuseIdentifier = "viewpic"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        picViewTV.dataSource = self
+        picViewTV.delegate = self
     }
     
 
-    /*
-    // MARK: - Navigation
+    @IBAction func addpic(_ sender: UIBarButtonItem) {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // MARK: UICollectionViewDataSource
+
+         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            // Methode kann alternativ entfallen
+            return 1
+        }
+
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return countries.count
+        }
+
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+                as! GalleryImageCell
+
+            let country = countries[indexPath.row]
+    cell.imageView.image = country.image
+
+            return cell
+        }
+
     }
-    */
+    }
+    
 
 }

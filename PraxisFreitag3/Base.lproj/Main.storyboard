@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PraxisFreitag3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-W4-Wah">
@@ -180,7 +180,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Fotoalbum" id="Y4O-5b-1Jr">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nuU-W9-wRI"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nuU-W9-wRI">
+                                            <connections>
+                                                <action selector="addpic:" destination="rhz-o7-JBy" id="4oO-dF-iaA"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -212,7 +216,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="viewplaceholder" id="g8g-y0-h5J">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="viewpic" id="g8g-y0-h5J">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ucD-mw-tmY">
@@ -235,6 +239,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QbJ-oa-ewe"/>
+                    <connections>
+                        <outlet property="picViewTV" destination="JfE-cq-rpr" id="S7H-pJ-O82"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8H-Ff-WFS" sceneMemberID="firstResponder"/>
             </objects>
@@ -242,7 +249,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kMP-t3-jpZ"/>
+        <segue reference="lhY-Bw-J33"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="emojis-cropped-1024x593" width="1024" height="593"/>
